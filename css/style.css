@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue1: hsl(211, 68%, 94%);
+  --light-grayish-blue2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+html {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  padding: 2.5rem 1.5rem 2rem;
+  max-width: 50rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+header {
+  height: 5rem;
+}
+
+h1 {
+  color: var(--very-dark-blue);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-right: 1rem;
+  float: left;
+}
+
+p {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.notifs-number {
+  color: white;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 0.2rem 1.1rem;
+  float: left;
+}
+
+.mark {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  float: right;
+  margin-top: 0.4rem;
+}
+
+.notif {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+
+.avatar {
+  width: 4rem;
+  margin-right: 1.5rem;
+}
+
+.user-name {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+.post {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+.group {
+  color: var(--blue);
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+.user-name:hover, .post:hover, .mark:hover {
+  color: var(--blue);
+}
+
+.time {
+  color: var(--grayish-blue);
+  margin-top: 0.5rem;
+}
+
+.private-message {
+  border: solid 0.1rem var(--light-grayish-blue2);
+  border-radius: 0.5rem;
+  color: var(--dark-grayish-blue);
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+}
+
+.private-message:hover {
+  background-color: var(--light-grayish-blue1);
+}
+
+.user-picture {
+  width: 4rem;
+  margin-left: 1.5rem;
+}
+
+/* JAVASCRIPT CLASS */
+.unread.notif {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.unread .notif-text::after {
+  content: "";
+  display: inline-flex;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+
+/* LARGE SCREEN */
+@media (min-width: 1024px) {
+  main {
+    width: 51%;
+    max-width: 73rem;
+    padding: 3.5rem 3rem 0;
+  }
+
+  header {
+    height: 6rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .notifs-number {
+    margin-top: 0.4rem;
+  }
+
+  .mark {
+    font-size: 1.6rem;
+  }
+
+  .notif {
+    padding: 1.5rem;
+  }
+
+  .avatar {
+    margin-right: 2rem;
+    width: 4.5rem;
+  }
+
+  .private-message {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .user-picture {
+    width: 4.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* TABLET SIZE SCREEN */
+@media (min-width:712px) {
+  body {
+    background-color: hsla(205, 33%, 90%, 0.3);
+  }
+
+  main {
+    border-radius: 1.5rem;
+    margin: 6rem 0;
+    padding: 3.5rem 3rem 0;
+  }
+}

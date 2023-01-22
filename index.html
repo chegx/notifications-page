@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Notifications page | Frontend Mentor </title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Notifications  </h1>
+      <span id="notifs-number" class="notifs-number"></span>
+      <button type="button" id="mark-btn" class="mark">Mark all as read</button>
+    </header>
+    <article class="notif unread">
+      <img class="avatar" src="images/avatar-mark-webber.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Mark Webber</a> reacted to your recent post <a class="post" href="#">My first tournament today!</a></p>
+        <p class="time">1m ago</p>
+      </div>
+    </article>
+    <article class="notif unread">
+      <img class="avatar" src="images/avatar-angela-gray.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Angela Gray</a> followed you </p>
+        <p class="time">5m ago</p>
+      </div>
+    </article>
+    <article class="notif unread">
+      <img class="avatar" src="images/avatar-jacob-thompson.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Jacob Thompson</a> has joined your group <a class="group" href="#">Chess Club</a></p>
+        <p class="time">1 day ago</p>
+      </div>
+    </article>
+    <article class="notif">
+      <img class="avatar" src="images/avatar-rizky-hasanuddin.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Rizky Hasanuddin</a> sent you a private message</p>
+        <p class="time">5 days ago</p>
+        <a class="private-message" href="#">
+          Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+          I'm already having lots of fun and improving my game.
+        </a>
+      </div>
+    </article>
+    <article class="notif">
+      <img class="avatar" src="images/avatar-kimberly-smith.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Kimberly Smith</a> commented on your picture </p>
+        <p class="time">1 week ago</p>
+      </div>
+      <a href="#"><img class="user-picture" src="images/image-chess.webp" alt="Your Picture"></a>
+    </article>
+    <article class="notif">
+      <img class="avatar" src="images/avatar-nathan-peterson.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Nathan Peterson</a> reacted to your recent post <a class="post" href="#">5 end-game strategies to increase your win rate</a>
+        </p>
+        <p class="time">2 weeks ago</p>
+      </div>
+    </article>
+    <article class="notif">
+      <img class="avatar" src="images/avatar-anna-kim.webp" alt="Avatar">
+      <div>
+        <p class="notif-text"><a class="user-name" href="#">Anna Kim </a> left the group <a class="group" href="#">Chess Club</a></p>
+        <p class="time">2 weeks ago</p>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
