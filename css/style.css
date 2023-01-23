@@ -6,6 +6,7 @@
   --very-light-grayish-blue: hsl(210, 60%, 98%);
   --light-grayish-blue1: hsl(211, 68%, 94%);
   --light-grayish-blue2: hsl(205, 33%, 90%);
+  --light-grayish-blue3: hsla(211, 68%, 94%, 0.5);
   --grayish-blue: hsl(219, 14%, 63%);
   --dark-grayish-blue: hsl(219, 12%, 42%);
   --very-dark-blue: hsl(224, 21%, 14%);
@@ -125,7 +126,7 @@ p {
 
 /* JAVASCRIPT CLASS */
 .unread.notif {
-  background-color: var(--very-light-grayish-blue);
+  background-color: var(--light-grayish-blue3);
 }
 
 .unread .notif-text::after {
@@ -191,7 +192,7 @@ p {
 /* TABLET SIZE SCREEN */
 @media (min-width:712px) {
   body {
-    background-color: hsla(205, 33%, 90%, 0.3);
+    background-color: var(--very-light-grayish-blue);
   }
 
   main {
